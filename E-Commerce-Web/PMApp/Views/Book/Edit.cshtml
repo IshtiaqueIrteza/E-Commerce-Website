@@ -1,0 +1,94 @@
+﻿@model PMEntity.Book
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.ValidationSummary(true)
+    
+        <fieldset>
+            <legend>Book</legend>
+    
+            @Html.HiddenFor(model => model.Id)
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Name)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Price)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Price)
+                @Html.ValidationMessageFor(model => model.Price)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Author)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Author)
+                @Html.ValidationMessageFor(model => model.Author)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Type)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Type)
+                @Html.ValidationMessageFor(model => model.Type)
+            </div>
+
+            <div>
+                @if (ViewBag.errorMessage != null)
+                {
+                    <p>@ViewBag.errorMessage</p>
+                }
+            </div>
+
+            <input type="hidden" name="image" value="@Model.ImagePath" />
+    
+            <div>
+                <label for="file">Upload File:</label><input type="file" name="file" id="file" accept="image/*" onchange="loadFile(event)" />
+                <img src="@Model.ImagePath" id="output" width="200" height="200"/>
+                <script>
+                    var loadFile = function (event) {
+                        var output = document.getElementById('output');
+                        output.src = URL.createObjectURL(event.target.files[0]);
+                    };
+                </script>
+            </div> 
+
+            <br />
+
+            <input type="button" value="Cancel" onclick="window.location.reload()" />
+
+            <p>
+                <input type="submit" value="Save" />
+            </p>
+        </fieldset>
+    }
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>

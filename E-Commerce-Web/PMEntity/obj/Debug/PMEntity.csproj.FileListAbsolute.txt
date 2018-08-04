@@ -1,0 +1,10 @@
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMEntity\bin\Debug\PMEntity.dll.config
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMEntity\bin\Debug\PMEntity.dll
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMEntity\bin\Debug\PMEntity.pdb
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMEntity\bin\Debug\EntityFramework.dll
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMEntity\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMEntity\bin\Debug\EntityFramework.xml
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMEntity\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMEntity\obj\Debug\PMEntity.csprojResolveAssemblyReference.cache
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMEntity\obj\Debug\PMEntity.dll
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMEntity\obj\Debug\PMEntity.pdb

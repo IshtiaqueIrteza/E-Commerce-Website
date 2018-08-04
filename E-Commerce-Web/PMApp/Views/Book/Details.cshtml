@@ -1,0 +1,58 @@
+﻿@model PMEntity.Book
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Book</legend>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Name)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Name)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Price)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Price)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Author)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Author)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Type)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Type)
+        </div>
+    
+        <div class="display-label">
+             Image
+        </div>
+        <div class="display-field">
+            <img src="@Model.ImagePath" alt="Not available" height="200" width="200" />
+        </div>
+    </fieldset>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

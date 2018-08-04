@@ -1,0 +1,75 @@
+﻿@model PMEntity.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    @using (Html.BeginForm()) {
+        @Html.ValidationSummary(true)
+    
+        <fieldset>
+            <legend>User</legend>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Username)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Username)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Email)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Email)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Password)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new {@class="form-control", placeholder="Password"}})
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.DateOfBirth)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.DateOfBirth) Format : (MM/dd/YYYY)
+            </div>
+    
+            <p>
+                <input type="submit" value="Register" />
+            </p>
+        </fieldset>
+    }
+
+    <div>
+        <font color="red">
+
+        @Html.ValidationMessageFor(model => model.Username) <br />
+        @Html.ValidationMessageFor(model => model.Email) <br />
+        @Html.ValidationMessageFor(model => model.Password) <br />
+        @Html.ValidationMessageFor(model => model.DateOfBirth)
+        @ViewBag.errorMessage
+
+        </font>
+    </div>
+    
+    <div>
+        <a href="@Url.Action("Index", "Login")">Back To Login</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿@model IEnumerable<PMEntity.Transaction>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewUserTransaction</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BookId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClothId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClothQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateTime)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClothId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClothQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTime)
+            </td>
+        </tr>
+    }
+    
+    </table>
+
+    <a href="http://localhost:33917/Book">Back</a>
+
+</body>
+</html>

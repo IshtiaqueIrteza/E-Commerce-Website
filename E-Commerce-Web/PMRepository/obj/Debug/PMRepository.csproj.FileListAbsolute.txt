@@ -1,0 +1,12 @@
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMRepository\bin\Debug\PMRepository.dll.config
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMRepository\bin\Debug\PMRepository.dll
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMRepository\bin\Debug\PMRepository.pdb
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMRepository\bin\Debug\EntityFramework.dll
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMRepository\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMRepository\bin\Debug\EntityFramework.xml
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMRepository\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMRepository\obj\Debug\PMRepository.csprojResolveAssemblyReference.cache
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMRepository\obj\Debug\PMRepository.dll
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMRepository\obj\Debug\PMRepository.pdb
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMRepository\bin\Debug\PMEntity.dll
+c:\users\ishtiaque\documents\visual studio 2012\Projects\E-Commerce-Web\PMRepository\bin\Debug\PMEntity.pdb
